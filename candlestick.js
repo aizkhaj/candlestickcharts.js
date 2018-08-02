@@ -94,5 +94,16 @@ let max = Math.max(...arrayOfProperties);
 console.log('minimum grid marker:', min);
 console.log('maximum grid marker:', max);
 
-// console.log('input array:', arr);
-// console.log('values array:', arrOfAllPrices(arr));
+// round up the above min and max grid markers so that we can use that number for plotting the grid.
+// rounded to the nearest 5th.
+let gridMin = Math.round(min/5) * 5;
+let gridMax = Math.round(max/5) * 5;
+
+// Now that we are able to estimate the height of the Y axis via the max and min price markers, we want to determine the width of the X axis.
+// TODO: determine the width of X axis. This should be easier since we want a fixed width able to accomodate for a 100 data points of a daily chart. If each candle bar width is probably 5px, and the gap between each candle is x then we multiply 100 into 5+x to get the canvas.width. If there isn't enough data, then the chart should have a minimum of 600px.
+
+// Once we have a width and a height for our grid, let's plot them + mark the legends. Make sure that we have access to data by now, because the grid size will be hard to determine without max and min prices within a 100 days.
+// TODO: plot the grid and grid markers. 
+
+// Now that we have a grid that can comfortably accomodate our candlesticks, we want to actually plot the data.
+// TODO: create a function that can plot the entire data (100 points max). This will require not only figuring out how to determine the sizes of the rectangles but also the position on the grid. It will also need to plot the H and L for each candle too. Figure out the functions for creating the rectangles, and then creating the HL wicks.
