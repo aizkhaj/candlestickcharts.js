@@ -19,6 +19,22 @@ Other forms of JSON data should work too, but will require some tweaking to the 
 
 2. `require('candlestickcharts');` to where it's needed in your project.
 
+## Options available
+
+`canvas:` define your canvas tag here.
+
+`padding:` how much padding you will need in your chart.
+
+`gridScale:` What scale you want the Y axis to be increasing by.
+
+`gridColor:` What color you want the grid lines to be.
+
+`bullColor:` The color of a bullish/increasing candle.
+
+`bearColor:` The color of a bearish/decreasing candle.
+
+`data:` Point to your data source here.
+
 ## How to use Candlesticks.js in 5 Steps
 
 ```javascript
@@ -30,7 +46,7 @@ let myCanvas = document.getElementById("stockChart");
 myCanvas.width = 700;
 myCanvas.height = 350;
 
-// 3. Create an object with your specified options. Here's a sample object with the chart options:
+// 3. Create an object with your specified options. Here's a sample object with the chart options in use:
 const msftDaily = {
   canvas: myCanvas,
   padding: 10,
