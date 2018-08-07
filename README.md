@@ -4,7 +4,10 @@ This open source package will seek to solve only one problem - creating static c
 
 At the moment, it will only serve daily candlestick charts for a 100 data points (aka 100 day chart, about 5 months worth of data.) If this project picks up, or if there is enough time available, I'd like to develop additional features.
 
-If you would like to view a working sample or play around with the code, check it out here on Codepen*: [Live Preview](https://codepen.io/aizkhaj/pen/ZjvdrM)
+If you would like to view a working sample or play around with the code, check it out here on Codepen*: [Live Preview](https://codepen.io/aizkhaj/pen/ZjvdrM). 
+Otherwise here's a picture:
+![example of candlestick charts](./assets/example.png)
+
 *Please note that the preview example only uses 7 data points as a test.
 
 ## Data Source
