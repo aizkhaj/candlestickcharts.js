@@ -5,6 +5,7 @@ class Candlesticks {
     this.canvas = options.canvas;
     this.ctx = this.canvas.getContext("2d");
     this.timeSeries = options.data["Time Series (Daily)"];
+    this.symbol = options.data["Meta Data"]["2. Symbol"];
     this.scale = options.gridScale;
     this.properties = Object.values(this.timeSeries).reverse();
     this.candleWidth = 5;
@@ -174,27 +175,33 @@ class Candlesticks {
       gridValue += this.options.gridScale;
       counter += 1;
     }
+    // filling in the symbol text on chart
+    this.ctx.save();
+    this.ctx.fillStyle = "#ebeff4";
+    this.ctx.font = "bold 100px Arial";
+    this.ctx.fillText(this.symbol, 200, this.canvas.height / 2);
+    this.ctx.restore();
   }
 }
 
 
 // How to implement Candlesticks.js
-let myCanvas = document.getElementById("stockChart");
+// let myCanvas = document.getElementById("stockChart");
 
 // recommended size. Min. width can be 500. Anything smaller will be tougher to display information adequately.
-myCanvas.width = 600;
-myCanvas.height = 350;
+// myCanvas.width = 600;
+// myCanvas.height = 350;
 
 // sample chart options:
-const msftDaily = {
-  canvas: myCanvas,
-  padding: 10,
-  gridScale: 5,
-  gridColor: "#DBDBDB",
-  bullColor: "#3D92FA",
-  bearColor: "#FB6C64",
-  data: json
-};
+// const msftDaily = {
+//   canvas: myCanvas,
+//   padding: 10,
+//   gridScale: 5,
+//   gridColor: "#DBDBDB",
+//   bullColor: "#3D92FA",
+//   bearColor: "#FB6C64",
+//   data: json
+// };
 
-let myChart = new Candlesticks(msftDaily);
-myChart.draw();
+// let myChart = new Candlesticks(msftDaily);
+// myChart.draw();
