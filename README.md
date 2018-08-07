@@ -17,7 +17,7 @@ Other forms of JSON data should work too, but will require some tweaking to the 
 
 1. Install the npm package: `npm install candlestickcharts`
 
-2. `require(candlestickcharts);` to where it's needed in your project.
+2. `require('candlestickcharts');` to where it's needed in your project.
 
 ## How to use Candlesticks.js in 5 Steps
 

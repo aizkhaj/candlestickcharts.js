@@ -1,0 +1,25 @@
+{
+  "name": "candlestickcharts",
+  "version": "1.0.0",
+  "description": "Create static candlestick charts using HTML Canvas from JSON data.",
+  "main": "require('candlestickcharts')",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aizkhaj/candlestickcharts.js.git"
+  },
+  "keywords": [
+    "canvas",
+    "candlestick",
+    "charts",
+    "financial"
+  ],
+  "author": "Aizaz Khaja <aizazkj@gmail.com> (http://aizaz.tech/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aizkhaj/candlestickcharts.js/issues"
+  },
+  "homepage": "https://github.com/aizkhaj/candlestickcharts.js#readme"
+}
